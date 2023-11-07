@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> free Encryption tool </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
         integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -15,10 +15,10 @@
 
 <body>
     <div class="container">
-        <p> Enter key </p>
-        <input type="text" name="key" id="mykey" value="">
-        <p> Enter text </p>
-        <textarea name="mytext" id="mytext" cols="50" rows="30" value=""></textarea>
+        <p class="title"> Enter key </p>
+        <input type="text" name="key" id="mykey" value="" placeholder="key">
+        <p class="title"> Enter text </p>
+        <textarea name="mytext" id="mytext" cols="50" rows="20" value="" placeholder="text"></textarea>
         <button id="encryptbutton"> Encrypt </button>
         <button id="decryptbutton"> Decrypt</button>
         <p id="myp"></p>
@@ -64,9 +64,16 @@
             flex-direction: column;
             gap: 15px;
         }
-        button{
+
+        button {
             padding: 15px;
             cursor: pointer;
+        }
+
+        .title {
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
         }
     </style>
 </body>
